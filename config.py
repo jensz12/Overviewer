@@ -3,7 +3,7 @@
 # the referenced world names in the render definitions below.
 worlds['LeQuest'] = "C:/Users/Jens/Downloads/overviewer/LeQuest"
 
-# Define where to put the output here.
+# Define where to put the output.
 outputdir = "C:/world"
 
 # Overworld med Smooth Lightning!
