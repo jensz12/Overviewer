@@ -6,7 +6,7 @@ worlds['LeQuest'] = "C:/Users/Jens/Downloads/overviewer/LeQuest"
 # Define where to put the output.
 outputdir = "C:/world"
 
-# Overworld med Smooth Lightning!
+# Overworld med Smooth Lightning
 renders["lequestoverworld"] = {
     "world": "LeQuest",
     "title": "Overworld",
