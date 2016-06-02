@@ -221,6 +221,18 @@ renders["lequestoverworld"] = {
                     'z':0,
                     'name':'mathiasstart',
                     'description':'Mathias starter base.'},
+					{'id':'LeQuest',
+                    'x':72,
+                    'y':64,
+                    'z':-29,
+                    'name':'deathgames',
+                    'description':'Death Games/LeQuest Games. Bygget af Kjasper'},
+					{'id':'Spirit',
+                    'x':143,
+                    'y':64,
+                    'z':-71,
+                    'name':'andershus',
+                    'description':'Kjaspers starter hus. Anders bor også her'},
 					],
 	'markers':[ 
 				dict(name="Astrid", filterFunction=astridFilter, icon="icons/marker_astrid.png"),
@@ -239,6 +251,16 @@ renders["lequestcave"] = {
     "title": "Cave",
     "rendermode": cave,
     "dimension": "overworld",
+	'markers':[ 
+				dict(name="Astrid", filterFunction=astridFilter, icon="icons/marker_astrid.png"),
+				dict(name="Bisse", filterFunction=bisseFilter, icon="icons/marker_bisse.png"),
+				dict(name="Fred", filterFunction=fredFilter, icon="icons/marker_fred.png"),
+				dict(name="Jancx", filterFunction=jancxFilter, icon="icons/marker_jancx.png"),
+				dict(name="Jens", filterFunction=jensFilter, icon="icons/marker_jens.png"),
+				dict(name="Kjasper", filterFunction=kjasperFilter, icon="icons/marker_kjasper.png"),
+				dict(name="Mathias", filterFunction=mathiasFilter, icon="icons/marker_mathias.png"),
+				dict(name="Spirit", filterFunction=spiritFilter, icon="icons/marker_spirit.png"),
+				dict(name="LeQuest", filterFunction=lequestFilter, icon="icons/marker_lequest.png")],
 }
 # Nether med Smooth Lightning
 renders["lequestnether"] = {
