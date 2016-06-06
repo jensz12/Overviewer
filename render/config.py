@@ -61,6 +61,13 @@ def lequestFilter(poi):
             return (poi['name'], poi['description'])
         except KeyError:
             return poi['name'] + '\n'
+            
+def annFilter(poi):
+    if poi['id'] == 'Ann':
+        try:
+            return (poi['name'], poi['description'])
+        except KeyError:
+            return poi['name'] + '\n'
 
 # Define the path to your world here. 'LeQuest' in this case will show up as
 # the world name on the map interface. If you change it, be sure to also change
@@ -100,7 +107,7 @@ renders["lequestoverworld"] = {
                     'y':64,
                     'z':21,
                     'name':'Jens starter base',
-                    'description':'Jens starter base'},
+                    'description':'Jens starter base. Ann bor her også'},
 					{'id':'Bisse',
                     'x':172,
                     'y':64,
@@ -251,6 +258,18 @@ renders["lequestoverworld"] = {
                     'z':10,
                     'name':'Snemanden',
                     'description':'LeQuest snefarmen'},
+                    {'id':'Ann',
+                    'x':288,
+                    'y':64,
+                    'z':212,
+                    'name':'Anns hule',
+                    'description':'Anns hule. Her bor hun når hun er sur på Jens'},
+                    {'id':'Kjasper',
+                    'x':260,
+                    'y':64,
+                    'z':264,
+                    'name':'Kjaspers Villagers',
+                    'description':'Kjaspers villager trading'},
 					],
 	'markers':[ 
 				dict(name="Astrid", filterFunction=astridFilter, icon="icons/marker_astrid.png"),
@@ -261,7 +280,8 @@ renders["lequestoverworld"] = {
 				dict(name="Kjasper", filterFunction=kjasperFilter, icon="icons/marker_kjasper.png"),
 				dict(name="Mathias", filterFunction=mathiasFilter, icon="icons/marker_mathias.png"),
 				dict(name="Spirit", filterFunction=spiritFilter, icon="icons/marker_spirit.png"),
-				dict(name="LeQuest", filterFunction=lequestFilter, icon="icons/marker_lequest.png")],
+				dict(name="LeQuest", filterFunction=lequestFilter, icon="icons/marker_lequest.png"),
+                		dict(name="Ann", filterFunction=annFilter, icon="icons/marker_ann.png")],
 }
 # Overworld caves
 renders["lequestcave"] = {
@@ -278,7 +298,8 @@ renders["lequestcave"] = {
 				dict(name="Kjasper", filterFunction=kjasperFilter, icon="icons/marker_kjasper.png"),
 				dict(name="Mathias", filterFunction=mathiasFilter, icon="icons/marker_mathias.png"),
 				dict(name="Spirit", filterFunction=spiritFilter, icon="icons/marker_spirit.png"),
-				dict(name="LeQuest", filterFunction=lequestFilter, icon="icons/marker_lequest.png")],
+				dict(name="LeQuest", filterFunction=lequestFilter, icon="icons/marker_lequest.png"),
+                		dict(name="Ann", filterFunction=annFilter, icon="icons/marker_ann.png")],
 }
 # Overworld nat
 renders["lequestnight"] = {
@@ -295,7 +316,8 @@ renders["lequestnight"] = {
 				dict(name="Kjasper", filterFunction=kjasperFilter, icon="icons/marker_kjasper.png"),
 				dict(name="Mathias", filterFunction=mathiasFilter, icon="icons/marker_mathias.png"),
 				dict(name="Spirit", filterFunction=spiritFilter, icon="icons/marker_spirit.png"),
-				dict(name="LeQuest", filterFunction=lequestFilter, icon="icons/marker_lequest.png")],
+				dict(name="LeQuest", filterFunction=lequestFilter, icon="icons/marker_lequest.png"),
+                		dict(name="Ann", filterFunction=annFilter, icon="icons/marker_ann.png")],
 }
 # Nether med Smooth Lightning
 renders["lequestnether"] = {
