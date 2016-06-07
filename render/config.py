@@ -107,7 +107,7 @@ renders["lequestoverworld"] = {
                     'y':64,
                     'z':21,
                     'name':'Jens starter base',
-                    'description':'Jens starter base. Ann bor her også'},
+                    'description':'Jens starter base. Ann bor også her'},
 					{'id':'Bisse',
                     'x':172,
                     'y':64,
@@ -154,8 +154,8 @@ renders["lequestoverworld"] = {
                     'x':76,
                     'y':64,
                     'z':-6,
-                    'name':'Astrids kul lager',
-                    'description':'Astrids kul lager'},
+                    'name':'Astrids base & kul lager',
+                    'description':'Astrids base & kul lager'},
 					{'id':'LeQuest',
                     'x':227,
                     'y':64,
@@ -203,7 +203,7 @@ renders["lequestoverworld"] = {
                     'y':64,
                     'z':226,
                     'name':'Ko breederen',
-                    'description':'Ko breederen. Bygget af Kjasper'},
+                    'description':'Ko breederen. Bygget af Kjasper & Jancx'},
 					{'id':'LeQuest',
                     'x':721,
                     'y':64,
@@ -270,6 +270,12 @@ renders["lequestoverworld"] = {
                     'z':264,
                     'name':'Kjaspers Villagers',
                     'description':'Kjaspers villager trading'},
+                    {'id':'LeQuest',
+                    'x':17,
+                    'y':64,
+                    'z':-864,
+                    'name':'End portal',
+                    'description':'End portal'},
 					],
 	'markers':[ 
 				dict(name="Astrid", filterFunction=astridFilter, icon="icons/marker_astrid.png"),
@@ -281,7 +287,7 @@ renders["lequestoverworld"] = {
 				dict(name="Mathias", filterFunction=mathiasFilter, icon="icons/marker_mathias.png"),
 				dict(name="Spirit", filterFunction=spiritFilter, icon="icons/marker_spirit.png"),
 				dict(name="LeQuest", filterFunction=lequestFilter, icon="icons/marker_lequest.png"),
-                		dict(name="Ann", filterFunction=annFilter, icon="icons/marker_ann.png")],
+                dict(name="Ann", filterFunction=annFilter, icon="icons/marker_ann.png")],
 }
 # Overworld caves
 renders["lequestcave"] = {
@@ -299,7 +305,7 @@ renders["lequestcave"] = {
 				dict(name="Mathias", filterFunction=mathiasFilter, icon="icons/marker_mathias.png"),
 				dict(name="Spirit", filterFunction=spiritFilter, icon="icons/marker_spirit.png"),
 				dict(name="LeQuest", filterFunction=lequestFilter, icon="icons/marker_lequest.png"),
-                		dict(name="Ann", filterFunction=annFilter, icon="icons/marker_ann.png")],
+                dict(name="Ann", filterFunction=annFilter, icon="icons/marker_ann.png")],
 }
 # Overworld nat
 renders["lequestnight"] = {
@@ -317,7 +323,7 @@ renders["lequestnight"] = {
 				dict(name="Mathias", filterFunction=mathiasFilter, icon="icons/marker_mathias.png"),
 				dict(name="Spirit", filterFunction=spiritFilter, icon="icons/marker_spirit.png"),
 				dict(name="LeQuest", filterFunction=lequestFilter, icon="icons/marker_lequest.png"),
-                		dict(name="Ann", filterFunction=annFilter, icon="icons/marker_ann.png")],
+                dict(name="Ann", filterFunction=annFilter, icon="icons/marker_ann.png")],
 }
 # Nether med Smooth Lightning
 renders["lequestnether"] = {
