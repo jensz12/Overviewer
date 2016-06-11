@@ -69,6 +69,13 @@ def annFilter(poi):
         except KeyError:
             return poi['name'] + '\n'
 
+def sebFilter(poi):
+    if poi['id'] == 'Seb':
+        try:
+            return (poi['name'], poi['description'])
+        except KeyError:
+            return poi['name'] + '\n'
+
 # Define the path to your world here. 'LeQuest' in this case will show up as
 # the world name on the map interface. If you change it, be sure to also change
 # the referenced world names in the render definitions below.
@@ -287,7 +294,8 @@ renders["lequestoverworld"] = {
 				dict(name="Mathias", filterFunction=mathiasFilter, icon="icons/marker_mathias.png"),
 				dict(name="Spirit", filterFunction=spiritFilter, icon="icons/marker_spirit.png"),
 				dict(name="LeQuest", filterFunction=lequestFilter, icon="icons/marker_lequest.png"),
-                dict(name="Ann", filterFunction=annFilter, icon="icons/marker_ann.png")],
+                dict(name="Ann", filterFunction=annFilter, icon="icons/marker_ann.png"),
+                dict(name="Seb", filterFunction=sebFilter, icon="icons/marker_seb.png")],
 }
 # Overworld caves
 renders["lequestcave"] = {
@@ -305,7 +313,8 @@ renders["lequestcave"] = {
 				dict(name="Mathias", filterFunction=mathiasFilter, icon="icons/marker_mathias.png"),
 				dict(name="Spirit", filterFunction=spiritFilter, icon="icons/marker_spirit.png"),
 				dict(name="LeQuest", filterFunction=lequestFilter, icon="icons/marker_lequest.png"),
-                dict(name="Ann", filterFunction=annFilter, icon="icons/marker_ann.png")],
+                dict(name="Ann", filterFunction=annFilter, icon="icons/marker_ann.png"),
+                dict(name="Seb", filterFunction=sebFilter, icon="icons/marker_seb.png")],
 }
 # Overworld nat
 renders["lequestnight"] = {
@@ -323,7 +332,8 @@ renders["lequestnight"] = {
 				dict(name="Mathias", filterFunction=mathiasFilter, icon="icons/marker_mathias.png"),
 				dict(name="Spirit", filterFunction=spiritFilter, icon="icons/marker_spirit.png"),
 				dict(name="LeQuest", filterFunction=lequestFilter, icon="icons/marker_lequest.png"),
-                dict(name="Ann", filterFunction=annFilter, icon="icons/marker_ann.png")],
+                dict(name="Ann", filterFunction=annFilter, icon="icons/marker_ann.png"),
+                dict(name="Seb", filterFunction=sebFilter, icon="icons/marker_seb.png")],
 }
 # Nether med Smooth Lightning
 renders["lequestnether"] = {
