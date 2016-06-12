@@ -361,7 +361,7 @@ renders["lequestnether"] = {
                     'name':'Guldminen',
                     'description':'Portalen til guldminen'},
                     {'id':'LeQuest',
-                    'x':339,
+                    'x':439,
                     'y':64,
                     'z':360,
                     'name':'Mesa',
