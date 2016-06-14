@@ -76,6 +76,8 @@ def sebFilter(poi):
         except KeyError:
             return poi['name'] + '\n'
 
+end_smooth_lighting = [Base(), EdgeLines(), SmoothLighting(strength=0.5)]
+
 # Define the path to your world here. 'LeQuest' in this case will show up as
 # the world name on the map interface. If you change it, be sure to also change
 # the referenced world names in the render definitions below.
@@ -84,10 +86,10 @@ worlds['LeQuest'] = "C:/Users/Jens/Downloads/overviewer/LeQuest"
 # Define where to put the output.
 outputdir = "C:/world"
 
-# Overworld med Smooth Lightning
+# Dag med Smooth Lightning
 renders["lequestoverworld"] = {
     "world": "LeQuest",
-    "title": "Overworld",
+    "title": "Dag",
     "rendermode": smooth_lighting,
     "dimension": "overworld",
 	'manualpois':[
@@ -331,7 +333,7 @@ renders["lequestcave"] = {
 # Overworld nat
 renders["lequestnight"] = {
     "world": "LeQuest",
-    "title": "Night",
+    "title": "Nat",
     "rendermode": smooth_night,
     "dimension": "overworld",
 	'markers':[ 
@@ -416,4 +418,20 @@ renders["lequestnether"] = {
                     'description':'Portalen til junglen'},
 					],
 	'markers':[ dict(name="LeQuest", filterFunction=lequestFilter, icon="icons/marker_lequest.png")],
+}
+# End
+renders["lequestend"] = {
+    "world": "LeQuest",
+    "title": "End",
+    "rendermode": end_smooth_lighting,
+    "dimension": "end",
+    'manualpois':[
+                   {'id':'LeQuest',
+                    'x':286,
+                    'y':64,
+                    'z':61,
+                    'name':'Enderpearl farmen',
+                    'description':'Enderpearl farmen'},
+					],
+	'markers':[	dict(name="LeQuest", filterFunction=lequestFilter, icon="icons/marker_lequest.png")],
 }
