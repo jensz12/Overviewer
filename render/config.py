@@ -328,7 +328,7 @@ renders["lequestcave"] = {
 				dict(name="Spirit", filterFunction=spiritFilter, icon="icons/marker_spirit.png"),
 				dict(name="LeQuest", filterFunction=lequestFilter, icon="icons/marker_lequest.png"),
                 		dict(name="Ann", filterFunction=annFilter, icon="icons/marker_ann.png"),
-        			 dict(name="Seb", filterFunction=sebFilter, icon="icons/marker_seb.png")],
+        			dict(name="Seb", filterFunction=sebFilter, icon="icons/marker_seb.png")],
 }
 # Overworld nat
 renders["lequestnight"] = {
